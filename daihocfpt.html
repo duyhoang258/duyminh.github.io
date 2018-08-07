@@ -1,0 +1,439 @@
+﻿<DOCTYPE! hmtl>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trường đại học FPT - 10 năm cháy bỏng khát vọng đổi thay</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <base href="http://daihoc.fpt.edu.vn/">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <style>
+*   {box-sizing: inherit;}
+  body {
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+   font-size: 15px;
+}
+.space1 {
+   margin-left: 200px;
+}
+.space2 {
+   margin-right: 200px
+}
+.logo {
+   margin: 50px 200px;
+   float: left;
+   display: block;
+}
+.search {
+   float: right;
+   display: block;
+   margin: 60px 200px 40px;    
+}
+.search-border {
+   text-indent: 10px;
+   box-sizing: inherit;
+   border:1px solid gray;
+   border-radius: 3px;
+   width: 200px;
+   height: 38px;  
+   margin:0;
+}
+.button {
+   border: 0px solid;
+   border-radius: 3px;
+   background-color:#f05123;
+   width: 38px;
+   height: 38px;
+}
+.flag {
+   float: right;
+   display: inline;
+   width: auto;
+   height: 38px;
+}
+.ul1 { 
+        cursor: pointer;
+        background-color:#f37125;
+        list-style-type:none;
+        overflow: hidden;
+        margin:0;
+        padding:0;
+        width: 100%;
+}
+.li1 { 
+        float:left;
+        text-align: center;
+}
+.li2 {
+        font-weight: bold;
+}
+.li1 a {
+        position: relative;
+        display:block;
+        font-size:13px;
+        color: white;
+        padding:20px 10px;
+        text-decoration: none;
+}
+.li1 a:hover {
+        background-color:#f05123;
+}
+.drop1 {
+    font-weight: none;
+    font-size:12px;
+    text-align: left;
+    display: none;
+    overflow: auto;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 250px;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.drop1 a{
+    font-weight: none;
+    border-bottom: 1px solid #E8E8E8;
+    color: #3B3B3B;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+}
+.drop1 a:hover{
+    background-color: #f1f1f1
+}
+.li1:hover .drop1{
+    display: block;
+}
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  margin-bottom:20px;
+  width:100%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+  text-decoration: none;
+}
+.hnew {  
+    display: block;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    font-size: 34px;
+    color: #f05123;
+    text-transform: uppercase;
+    font-weight: 700px; 
+}
+.col-img { 
+    width: 100%;    
+}
+.col-img:hover {
+    opacity:0.7;
+}
+.col-text {
+    font-size: 18px;
+    text-decoration: none;
+    color: #404040;
+    padding: 10px;
+    text-align: left;
+    padding-left: 0;
+    font-weight: bold;
+}
+.text-center {
+    font-size: 18px;
+    text-align:center;
+}
+.col-text a:hover{
+    color:#f05123;
+    text-decoration: none;
+}
+.but-margin {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.but {
+    border: 1px solid #f05123;
+    border-radius: 3px;
+    padding: 12px 14px;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: #f05123;
+    text-transform: uppercase;
+}
+.but:hover {
+    color: white;
+    background-color: #f05123;
+    text-decoration: none;
+} 
+.text1 {
+    font-size:16px;
+    text-align: left;
+    box-sizing: inherit;
+}
+.right1 {
+    float: right;
+    list-style-type: none;
+}
+.inline1 {
+    display: inline;
+}
+.size {
+    height:38px;
+    width :38px;
+}
+.size:hover {
+    opacity:0.8;
+}
+.line1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f05123;
+}
+.add {
+    font-size:14px;
+    color: #f05123;
+}
+  </style>
+ </head>
+
+<body>
+ <header>
+ <div>
+  <div>
+   <a href="/" class="logo"><img src="https://imgur.com/V6w2aNE.png" alt="logo"></a>
+  </div>
+  <div class="search">
+    <form>
+     <input type="text"  class="search-border" placeholder="Tìm kiếm ..." value="" name="s">
+     <button class="button"><i class="fa fa-search" style="color:white;"></i></button>
+     <a href="/en/"><img src="https://imgur.com/HQZJODF.png" alt="en"  class="flag" style="margin-left: 5px;"></a>
+     <a href="/"><img src="https://imgur.com/ddgBAVL.png" alt="vn"  class="flag" style="margin-left: 12px;"></a>
+    </form>
+  </div>
+  </div>
+  <div>
+     <ul class="ul1 ul2">
+       <li class="li1"><a href="/" style="background-color:#f05123;" class="space1 li2">TRANG CHỦ</a></li>
+       <li class="li1"><a href="#" class="li2">GIỚI THIỆU</a>
+        <div class="drop1">
+         <a href="#">Lịch sử thành lập</a>
+         <a href="#">Triết lý đào tạo</a>
+         <a href="#">Các giải thưởng và thành tích</a>
+         <a href="#">Ban lãnh đạo</a>
+         <a href="#">Gắn kết cộng đồng</a>
+        </div></li>      
+       <li class="li1"><a href="#" class="li2">TIN TỨC</a>
+        <div class="drop1">
+         <a href="#">Tin tức chung</a>
+         <a href="#">Hoạt động sinh viên</a>
+         <a href="#">Sự kiện</a>
+        </div></li>          
+       <li class="li1"><a href="#" class="li2">NGÀNH HỌC</a>
+        <div class="drop1">
+         <a href="#">Máy tính & CNTT</a>
+         <a href="#">Kinh doanh – Quản lý</a>
+         <a href="#">Mỹ thuật ứng dụng</a>
+         <a href="#">Ngôn ngữ</a>
+         <a href="#">Du lịch, khách sạn, nhà hàng</a>
+         <a href="#">Báo chí & Truyền thông</a>
+         <a href="#">Học phí</a>
+         <a href="#">Các chương trình Học bổng</a>
+        </div></li>     
+       <li class="li1"><a href="#" class="li2">ĐỜI SỐNG SINH VIÊN</a>
+        <div class="drop1">
+         <a href="#">Một ngày tại Đại học FPT</a>
+         <a href="#">Vì sao nên học tại Đại học FPT</a>
+         <a href="#">Đời sống sinh viên</a>
+         <a href="#">Các hoạt động thể thao trong trường</a>
+         <a href="#">Dịch vụ hỗ trợ</a>
+         <a href="#">Định hướng và khởi đầu</a>
+         <a href="#">Tốt nghiệp</a>
+         <a href="#">Các mốc thời gian quan trọng trong năm</a>
+         <a href="#">Câu chuyện sinh viên</a>
+         <a href="#">Các câu chuyện thành công</a>
+        </div></li>     
+       <li class="li1"><a href="#" class="li2">HỢP TÁC</a>
+        <div class="drop1">
+         <a href="#">Ngành công nghiệp và Doanh nghiệp</a>
+         <a href="#">Chương trình trao đổi sinh viên</a>
+         <a href="#">Chương trình học tập tại nước ngoài</a>
+         <a href="#">Các trường đại học đối tác</a>
+        </div></li>     
+       <li class="li1"><a href="#" class="li2">CỰU SINH VIÊN</a>
+        <div class="drop1">
+         <a href="#">Cộng đồng cựu sinh viên</a>
+         <a href="#">Họ đang làm việc tại đâu</a>
+        </div></li>     
+       <li class="li1"><a href="#" class="li2">TUYỂN SINH</a></li>
+       <li class="li1"><a href="#" class="li2">LIÊN HỆ</a></li>
+     </ul>
+  </div>
+ </header>
+<div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="http://daihoc.fpt.edu.vn/media/2018/08/TRAICUU-T8-01.jpg" style="width:100%; height:650px;">
+  </div>
+
+  <div class="mySlides1">
+    <img src="http://daihoc.fpt.edu.vn/media/2016/11/FUG-t3-2018-bannerweb.jpg" style="width:100%; height:650px;">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+
+<script>
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+<div class="container">
+ <div> 
+  <h1 class="hnew"><b>ĐĂNG KÝ NGÀNH HỌC PHÙ HỢP VỚI BẠN</b></h1>
+ </div>
+ <div class="row">
+  <div class="col-sm-4" style="padding: 20px;">
+    <a href="#"><img src="https://i.imgur.com/ntseNKu.jpg" alt="BÁO CHÍ & TRUYỀN THÔNG" class="col-img"></a><br>
+    <p class="col-text text-center"><a href="#" class="col-text">BÁO CHÍ & TRUYỀN THÔNG</a></p>
+  </div>
+  <div class="col-sm-4" style="padding: 20px;">
+    <a href="#"><img src="https://i.imgur.com/B2Exwj1.png" alt="NGÔN NGỮ" class="col-img"></a><br>
+    <p class="col-text text-center"><a href="#" class="col-text">NGÔN NGỮ</a></p>
+  </div>
+  <div class="col-sm-4" style="padding: 20px;">
+    <a href="#"><img src="https://i.imgur.com/xT1Tl8E.jpg" alt="KINH DOANH & QUẢN LÝ" class="col-img"></a><br>
+    <p class="col-text text-center"><a href="#" class="col-text">KINH DOANH & QUẢN LÝ</a></p>
+  </div>
+ </div>
+
+ <div class="row">
+  <div class="col-sm-4" style="padding: 20px;">
+    <a href="#"><img src="https://i.imgur.com/ArFzNgA.png" class="col-img"></a><br>
+    <p class="col-text text-center"><a href="#" class="col-text">MÁY TÍNH & CNTT</a></p>
+  </div>
+  <div class="col-sm-4" style="padding: 20px;">
+    <a href="#"><img src="https://i.imgur.com/nYQGoRc.png" alt="DU LỊCH, KHÁCH SẠN, NHÀ HÀNG" class="col-img"></a><br>
+    <p class="col-text text-center"><a href="#" class="col-text">DU LỊCH, KHÁCH SẠN, NHÀ HÀNG</a></p>
+  </div>
+  <div class="col-sm-4" style="padding: 20px;">
+    <a href="#"><img src="https://i.imgur.com/9lA58l9.png" alt="MỸ THUẬT ỨNG DỤNG" class="col-img"></a><br>
+    <p class="col-text text-center"><a href="#" class="col-text">MỸ THUẬT ỨNG DỤNG</a></p>
+  </div>
+ </div>
+ <div class="row">
+  <h1 class="hnew"><strong>Tin Tức</strong></h1>
+  <div class="col-sm-4" style="padding: 20px;">
+    <a href="#"><img src="https://i.imgur.com/AeW1TXY.jpg" alt="new" class="col-img"></a><br>
+    <p class="col-text"><a href="#" class="col-text">FPTUers lạc trôi tới Phượng Hoàng cổ trấn – Trương Gia Giới</a></p>
+  </div>
+  <div class="col-sm-4" style="padding: 20px;">
+    <a href="#"><img src="https://i.imgur.com/ooI5aA3.jpg" alt="new" class="col-img"></a><br>
+    <p class="col-text"><a href="#" class="col-text">Top 10 lương cao nhất ngành IT</a></p>
+  </div>
+  <div class="col-sm-4" style="padding: 20px;">
+    <a href="#"><img src="https://i.imgur.com/0BXNgHO.jpg" alt="new" class="col-img"></a><br>
+    <p class="col-text"><a href="#" class="col-text">Sinh viên nên bước ra vùng an toàn</a></p>
+  </div>
+ </div>
+</div>
+</div>
+<div class="but-margin">
+  <a href="/new" class="but"><strong>Xem thêm</strong></a>
+</div>
+
+<footer>
+ <div class="container">
+  <div class="line1">
+    <p class="text1 inline1">© Design by: Duy Minh</p>
+    <ul class="right1">
+     <li class="inline1"><a href="facebook"><img src="https://i.imgur.com/9SmFxMM.png" alt="Facebook" class="size"></a></li>
+     <li class="inline1"><a href="google"><img src="https://i.imgur.com/8DsEAuQ.png" alt="Google" class="size"></a></li>
+     <li class="inline1"><a href="youtube"><img src="https://i.imgur.com/hsixeCd.png" alt="Youtube" class="size"></a></li>
+    </ul>
+  </div>
+  <div class="row" style="margin-top:30px;">
+   <div class="col-sm-3">
+    <h4 class="add"><b>HÀ NỘI</b></h4>
+    <p>Khu Giáo dục và Đào tạo – Khu Công nghệ cao Hòa Lạc – Km29 Đại lộ Thăng Long, Thạch Thất, TP. Hà Nội<br>
+Điện thoại: (024) 7300 5588<br>
+Email: <a href="mailto:daihocfpt@fpt.edu.vn">daihocfpt@fpt.edu.vn</a></p>
+   </div>
+   <div class="col-sm-3">
+    <h4 class="add"><b>TP. HỒ CHÍ MINH</b></h4>
+    <p>Lầu 2, toà nhà Innovation, lô 24 - CVPM Quang Trung - P. Tân Chánh Hiệp, Quận 12, TP. HCM<br>
+Điện thoại: (028) 7300 5588<br>
+Email: <a href="mailto:daihoc.hcm@fpt.edu.vn">daihoc.hcm@fpt.edu.vn</a></p>
+   </div>
+   <div class="col-sm-3">
+    <h4 class="add"><b>ĐÀ NẴNG</b></h4>
+    <p>137 Nguyễn Thị Thập, Quận Liên Chiểu, TP. Đà Nẵng.<br>
+Điện thoại: (0236) 730 0999<br>
+Email: daihocfpt@fpt.edu.vn</p>
+   </div>
+   <div class="col-sm-3">
+    <h4 class="add"><b>CẦN THƠ</b></h4>
+    <p>Địa chỉ: 160 đường 30/4, Q. Ninh Kiều, TP. Cần Thơ<br>
+Điện thoại: (0292) 730 36 36<br>
+Hotline: 0909.070.357<br>
+Email: fptu.cantho@fe.edu.vn</p>
+   </div>
+  </div>
+ </div>
+</footer>
+</body>
+
+</html>
